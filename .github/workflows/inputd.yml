@@ -1,4 +1,4 @@
-name: Add numbers
+name: Add numbers inputs
 
 on: [push]
 
@@ -14,10 +14,6 @@ jobs:
 
       - name: Run Python script
         run: |
-          echo "Enter the first number:"
-          read num1
-          echo "Enter the second number:"
-          read num2
-          python add_numbers.py $56 $24
-
-    
+          $num1 = Read-Host "Enter the first number"
+          $num2 = Read-Host "Enter the second number"
+          python add_numbers.py $num1 $num2
