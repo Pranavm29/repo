@@ -1,0 +1,14 @@
+name: Simple Program
+
+on: push
+
+jobs:
+  run_program:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run program
+        run: |
+          python simple.py
