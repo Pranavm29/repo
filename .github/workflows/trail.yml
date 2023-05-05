@@ -28,4 +28,5 @@ jobs:
         git config --global user.email "pranavmali32@gmail.com"
         git add Destinationforexe/
         git commit -m "Add executable"
-        git push
+        git push origin main
+
